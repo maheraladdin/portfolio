@@ -1,6 +1,4 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import discordClonePortrait from "@/public/discord-clone.webp";
 import trelloClonePortrait from "@/public/trello-clone.webp";
@@ -37,28 +35,139 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Full-Stack Development Track",
+    location: "Udacity",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I took a full-stack development track on Udacity. I learned about the front-end, and python",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "Oct 2020",
+    url: "https://graduation.udacity.com/confirm/JAAEPAPH",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Web Development Challenger",
+    location: "Udacity",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "I took a web development challenger track on Udacity. I learned about the front-end, wordpress",
+    icon: React.createElement(LuGraduationCap),
+    date: "Dec 2020",
+    url: "https://graduation.udacity.com/confirm/GK3DK7AD",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Project Management",
+    location: "Coursera",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "I took a project management course on Coursera. I learned about the basics of project management.",
+    icon: React.createElement(LuGraduationCap),
+    date: "Feb 2021",
+    url: "http://coursera.org/verify/F4GQ872SFQ3Z",
+  },
+  {
+    title: "Web Development Professional nano-degree",
+    location: "Udacity",
+    description:
+      "I took a web development professional nano-degree on Udacity. I learned about the front-end, back-end",
+    icon: React.createElement(LuGraduationCap),
+    date: "Mar 2021",
+    url: "https://confirm.udacity.com/JQ3YCSGJ",
+  },
+  {
+    title: "Responsive Web Design",
+    location: "FreeCodeCamp",
+    description:
+      "I took a web development professional nano-degree on Udacity. I learned about the front-end, back-end",
+    icon: React.createElement(LuGraduationCap),
+    date: "Jul 2022",
+    url: "https://freecodecamp.org/certification/maher-aladdin-mansour/responsive-web-design",
+  },
+  {
+    title: "Learn HTML & CSS",
+    location: "MaharaTech - ITIMooca",
+    description:
+      "I took a Learn HTML & CSS course on MaharaTech - ITIMooca. I advanced my knowledge about HTML & CSS.",
+    icon: React.createElement(LuGraduationCap),
+    date: "Jul 2022",
+    url: "https://maharatech.gov.eg/mod/customcert/verify_certificate.php?contextid=35649&code=pN4vkKrmN2&qrcode=1",
+  },
+  {
+    title: "Javascript",
+    location: "MaharaTech - ITIMooca",
+    description:
+      "I took a Javascript course on MaharaTech - ITIMooca. I advanced my knowledge about Javascript.",
+    icon: React.createElement(LuGraduationCap),
+    date: "Dec 2022",
+    url: "https://maharatech.gov.eg/mod/customcert/verify_certificate.php?contextid=162768&code=EhHHZoMzDM&qrcode=1",
+  },
+  {
+    title: "Modern JavaScript: ES6 and beyond",
+    location: "MaharaTech - ITIMooca",
+    description:
+      "I took a Modern JavaScript: ES6 and beyond course on MaharaTech - ITIMooca. I advanced my knowledge about JavaScript.",
+    icon: React.createElement(LuGraduationCap),
+    date: "Jan 2023",
+    url: "https://maharatech.gov.eg/mod/customcert/verify_certificate.php?contextid=206156&code=9u35JVF98r&qrcode=1",
+  },
+  {
+    title: "JavaScript Developer",
+    location: "MaharaTech - ITIMooca",
+    description:
+      "this is a certificate for finishing Javascript Developer track on MaharaTech - ITIMooca.",
+    icon: React.createElement(LuGraduationCap),
+    date: "Jan 2023",
+    url: "https://maharatech.gov.eg/mod/customcert/verify_certificate.php?contextid=259530&code=xaJyK8s2FN&qrcode=1",
+  },
+  {
+    title: "Introduction to mongoDB",
+    location: "MaharaTech - ITIMooca",
+    description:
+      "I took an Introduction to mongoDB course on MaharaTech - ITIMooca. I learned about mongoDB basics.",
+    icon: React.createElement(LuGraduationCap),
+    date: "Feb 2023",
+    url: "https://maharatech.gov.eg/mod/customcert/verify_certificate.php?contextid=253409&code=80AN3cruuk&qrcode=1",
+  },
+  {
+    title: "Database Fundamentals",
+    location: "MaharaTech - ITIMooca",
+    description:
+      "I took a Database Fundamentals course on MaharaTech - ITIMooca. I learned about ERD diagrams ,and sql.",
+    icon: React.createElement(LuGraduationCap),
+    date: "Feb 2023",
+    url: "https://maharatech.gov.eg/mod/customcert/verify_certificate.php?contextid=162686&code=rxgBlAlVgg&qrcode=1",
+  },
+  {
+    title: "The Complete Node.js Course",
+    location: "MaharaTech - ITIMooca",
+    description:
+      "I took a The Complete Node.js Course (RESTful Web Services with Node.js, Express, and MongoDB) course on MaharaTech - ITIMooca. I learned about Node.js, Express, and MongoDB.",
+    icon: React.createElement(LuGraduationCap),
+    date: "Mar 2023",
+    url: "https://maharatech.gov.eg/mod/customcert/verify_certificate.php?contextid=410164&code=JE7mLreVur&qrcode=1",
+  },
+  {
+    title: "NodeJS - Build a Full E- Commerce RESTful APIs 2023",
+    location: "Udemy",
+    description:
+      "I took a NodeJS - Build a Full E- Commerce RESTful APIs 2023 course on Udemy. I learned about Node.js, Express, and MongoDB ,and I build a full E-Commerce RESTful APIs.",
+    icon: React.createElement(LuGraduationCap),
+    date: "Jul 2023",
+    url: "https://www.udemy.com/certificate/UC-3b7e9d91-ac00-4fba-9813-ec44996ad6dd/",
+  },
+  {
+    title: "JavaScript Algorithms and Data Structures",
+    location: "FreeCodeCamp",
+    description:
+      "I took a JavaScript Algorithms and Data Structures course on FreeCodeCamp. I learned about JavaScript Algorithms and Data Structures.",
+    icon: React.createElement(LuGraduationCap),
+    date: "Jul 2023",
+    url: "https://freecodecamp.org/certification/maher-aladdin-mansour/javascript-algorithms- and-data-structures",
+  },
+  {
+    title: "ReactJs-Build Full E- Commerce-Scratch Redux",
+    location: "Udemy",
+    description:
+      "I took a ReactJs-Build Full E- Commerce-Scratch Redux course on Udemy. I learned about React, Redux ,and I build a full E-Commerce.",
+    icon: React.createElement(LuGraduationCap),
+    date: "Aug 2023",
+    url: "https://www.udemy.com/certificate/UC-1f3b413e-207c-4a69-b515-c1118c40c3ed/",
   },
 ] as const;
 

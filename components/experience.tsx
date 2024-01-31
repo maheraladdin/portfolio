@@ -36,6 +36,7 @@ export default function Experience() {
                     ? "0.4rem solid #9ca3af"
                     : "0.4rem solid rgba(255, 255, 255, 0.5)",
               }}
+              dateClassName={"mx-2"}
               date={item.date}
               icon={item.icon}
               iconStyle={{
@@ -49,6 +50,15 @@ export default function Experience() {
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {item.description}
               </p>
+              <a
+                target={"_blank"}
+                className={
+                  "mt-1.5 block w-full xl:text-end hover:underline transition-all text-sky-500"
+                }
+                href={item.url}
+              >
+                verification
+              </a>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}
