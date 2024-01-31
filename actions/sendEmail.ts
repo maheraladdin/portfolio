@@ -19,7 +19,7 @@ export const sendEmail = async (formData: FormData) => {
     };
   }
 
-  if(!validateString(subject, 100)) {
+  if (!validateString(subject, 100)) {
     return {
       error: "Invalid subject",
     };
@@ -39,8 +39,8 @@ export const sendEmail = async (formData: FormData) => {
       subject,
       reply_to: senderEmail,
       react: React.createElement(ContactFormEmail, {
-        message: message,
-        senderEmail: senderEmail,
+        message,
+        senderEmail,
         subject,
       }),
     });
