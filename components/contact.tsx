@@ -113,8 +113,10 @@ export default function Contact() {
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
           onKeyDown={(event) => {
-            if (subject.length === 0) event.preventDefault();
-            if (event.key === "Tab") setSubject(subjectTemplate);
+            if (subject.length === 0 && event.key === "Tab") {
+              event.preventDefault();
+              setSubject(subjectTemplate);
+            }
           }}
         />
         <div
@@ -147,8 +149,10 @@ export default function Contact() {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           onKeyDown={(event) => {
-            if (message.length === 0) event.preventDefault();
-            if (event.key === "Tab") setMessage(messageTemplate);
+            if (message.length === 0 && event.key === "Tab") {
+              event.preventDefault();
+              setMessage(messageTemplate);
+            }
           }}
         />
         <SubmitBtn />
