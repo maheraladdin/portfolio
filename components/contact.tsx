@@ -14,6 +14,7 @@ import { BsFillShiftFill } from "react-icons/bs";
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
   const { theme } = useTheme();
+  const [email, setEmail] = React.useState("");
   const [subject, setSubject] = React.useState("");
   const [message, setMessage] = React.useState("");
   return (
@@ -38,17 +39,15 @@ export default function Contact() {
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
-        <a className="underline" href="mailto:maheraladdin@outlook.com">
-          maheraladdin@outlook.com
+        <a className="underline" href="mailto:maher.aladdin.mansour@gmail.com">
+          maher.aladdin.mansour@gmail.com
         </a>{" "}
         or through this form.
       </p>
 
       <form
         className="mt-10 flex flex-col gap-3 dark:text-black"
-        action={async (formData) => {
-          const { data, error } = await sendEmail(formData);
-
+        action={(formData) => {
           let style = {};
           if (theme === "dark")
             style = {
@@ -57,12 +56,21 @@ export default function Contact() {
               color: "#fff",
             };
 
-          if (error) {
-            toast.error(error, { style });
-            return;
-          }
-
-          toast.success("Email sent successfully!", { style });
+          toast
+            .promise(
+              sendEmail(formData),
+              {
+                loading: "Sending email...",
+                success: "Email sent successfully!",
+                error: "Failed to send email",
+              },
+              { style },
+            )
+            .then(() => {
+              setEmail("");
+              setSubject("");
+              setMessage("");
+            });
         }}
       >
         <label
@@ -81,6 +89,8 @@ export default function Contact() {
           maxLength={500}
           placeholder="Your email"
           id={"email"}
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
         <div
           className={
