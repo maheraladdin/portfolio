@@ -5,6 +5,7 @@ import trelloClonePortrait from "@/public/trello-clone.webp";
 import youtubeClonePortrait from "@/public/youtube-clone.webp";
 import netflixClonePortrait from "@/public/netflix-clone.webp";
 import eCommerceClonePortrait from "@/public/e-commerce-web-site.webp";
+import MiroClonePortrait from "@/public/miro-clone.webp";
 
 export const links = [
   {
@@ -172,6 +173,28 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Miro Clone",
+    description:
+      "This is an awesome full-stack Miro clone. It has features like authentication, boards, drawing, and more.",
+    tags: [
+      "TypeScript",
+      "React",
+      "Next.js (app router)",
+      "convex",
+      "Tailwindcss",
+      "Shadcn-ui",
+      "clerk",
+      "LiveBlocks",
+      "zustand",
+    ],
+    imageUrl: MiroClonePortrait,
+    githubUrl: "https://github.com/maheraladdin/miro-clone",
+    demoUrl: "https://miro-clone-eight.vercel.app/",
+    githubFrontEndUrl: "",
+    githubBackEndUrl: "",
+    youtubeUrl: "",
+  },
   {
     title: "Discord Clone",
     description:
