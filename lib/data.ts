@@ -174,6 +174,29 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Arees",
+    description:
+      "This is an awesome full-stack tourism mobile application using Expo",
+    tags: [
+      "TypeScript",
+      "React",
+      "React Native",
+      "Expo",
+      "Mongodb",
+      "mongodb atlas",
+      "zod",
+      "stripe",
+      "prisma",
+      "zustand",
+    ],
+    imageUrl: null,
+    githubUrl: "https://github.com/maheraladdin/arees",
+    demoUrl: "",
+    githubFrontEndUrl: "",
+    githubBackEndUrl: "",
+    youtubeUrl: "",
+  },
+  {
     title: "Miro Clone",
     description:
       "This is an awesome full-stack Miro clone. It has features like authentication, boards, drawing, and more.",
