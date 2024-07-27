@@ -241,7 +241,7 @@ export const projectsData = [
     ],
     imageUrl: discordClonePortrait,
     githubUrl: "https://github.com/maheraladdin/discord-clone",
-    demoUrl: "https://discord-clone-production-635e.up.railway.app/",
+    demoUrl: "https://discord-clone-production-074b.up.railway.app/",
     githubFrontEndUrl: "",
     githubBackEndUrl: "",
     youtubeUrl: "",
