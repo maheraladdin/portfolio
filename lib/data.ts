@@ -2,7 +2,7 @@ import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
 import discordClonePortrait from "@/public/discord-clone.webp";
 import trelloClonePortrait from "@/public/trello-clone.webp";
-import youtubeClonePortrait from "@/public/youtube-clone.webp";
+// import youtubeClonePortrait from "@/public/youtube-clone.webp";
 import netflixClonePortrait from "@/public/netflix-clone.webp";
 import eCommerceClonePortrait from "@/public/e-commerce-web-site.webp";
 import MiroClonePortrait from "@/public/miro-clone.webp";
@@ -272,31 +272,31 @@ export const projectsData = [
     githubBackEndUrl: "",
     youtubeUrl: "",
   },
-  {
-    title: "Youtube Clone",
-    description:
-      "this an awesome full-stack Youtube clone. It has features like authentication, channels, videos, comments, and more.",
-    tags: [
-      "TypeScript",
-      "React",
-      "Next.js (pages router)",
-      "trpc",
-      "prisma",
-      "Planetscale",
-      "Tailwindcss",
-      "headless-ui",
-      "next-auth",
-      "react-query",
-      "cloudinary",
-      "zod",
-    ],
-    imageUrl: youtubeClonePortrait,
-    githubUrl: "https://github.com/maheraladdin/video-chill",
-    demoUrl: "https://video-chill.vercel.app/",
-    githubFrontEndUrl: "",
-    githubBackEndUrl: "",
-    youtubeUrl: "",
-  },
+  // {
+  //   title: "Youtube Clone",
+  //   description:
+  //     "this an awesome full-stack Youtube clone. It has features like authentication, channels, videos, comments, and more.",
+  //   tags: [
+  //     "TypeScript",
+  //     "React",
+  //     "Next.js (pages router)",
+  //     "trpc",
+  //     "prisma",
+  //     "Planetscale",
+  //     "Tailwindcss",
+  //     "headless-ui",
+  //     "next-auth",
+  //     "react-query",
+  //     "cloudinary",
+  //     "zod",
+  //   ],
+  //   imageUrl: youtubeClonePortrait,
+  //   githubUrl: "https://github.com/maheraladdin/video-chill",
+  //   demoUrl: "https://video-chill.vercel.app/",
+  //   githubFrontEndUrl: "",
+  //   githubBackEndUrl: "",
+  //   youtubeUrl: "",
+  // },
   {
     title: "Netflix Clone",
     description:
