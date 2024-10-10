@@ -6,6 +6,9 @@ import trelloClonePortrait from "@/public/trello-clone.webp";
 import netflixClonePortrait from "@/public/netflix-clone.webp";
 import eCommerceClonePortrait from "@/public/e-commerce-web-site.webp";
 import MiroClonePortrait from "@/public/miro-clone.webp";
+import SuoqPortrait from "@/public/suoq.webp";
+import HelpThemToReachPortrait from "@/public/help-them-to-reach.webp";
+import { FaBriefcase } from "react-icons/fa";
 
 export const links = [
   {
@@ -35,6 +38,15 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
+  {
+    title: "Web Developer Trainee",
+    location: "Udacity",
+    description:
+      "During my Udacity Full-Stack training, I enhanced my skills in HTML, CSS, JavaScript, Node.js, and Express.js. I also acquired valuable freelance skills, including client communication, project management, and time management. As part of the program, I successfully built two projects: a weather application and a landing page.",
+    icon: React.createElement(FaBriefcase),
+    date: "Aug 2020",
+    url: null,
+  },
   {
     title: "Full-Stack Development Track",
     location: "Udacity",
@@ -170,13 +182,91 @@ export const experiencesData = [
     date: "Aug 2023",
     url: "https://www.udemy.com/certificate/UC-1f3b413e-207c-4a69-b515-c1118c40c3ed/",
   },
+  {
+    title: "Freelance Software Engineer",
+    location: "Mostaql.com ",
+    description:
+      "I have experience developing and maintaining scalable web applications using Next.js, the MERN stack, DigitalOcean, and Vercel, while analyzing client requirements to build tailored software solutions. I work within 2-week sprints, adhering to Agile methodologies to ensure efficient project delivery. My commitment to quality and client satisfaction has earned me a 100% success rate and five-star ratings, along with a 50% rehiring score and an average response time of just 36 minutes.",
+    icon: React.createElement(FaBriefcase),
+    date: "Apr 2024",
+    url: "https://mostaql.com/u/maheraladdin",
+  },
+  {
+    title: "Graduated from Faculty of Computer Science",
+    location: "Mansoura University",
+    description:
+      "During my studies at the Faculty of Computer Science, Mansoura University, I achieved an Excellent grade while actively participating in various competitions and projects. I secured 1st place in an educational game development competition using Unity in 2022, and 4th place in a 3D design competition using Blender the same year. In 2023, I earned 3rd place in a mobile application development competition, showcasing my growing skills in mobile technologies. Additionally, I placed 5th in the Arabization competition in 2024, highlighting my diverse capabilities and commitment to continuous learning and innovation.",
+    icon: React.createElement(LuGraduationCap),
+    date: "Jul 2024",
+    url: null,
+  },
+  {
+    title: "Atlassian Agile Project Management Professional Certificate",
+    location: "Atlassian",
+    description:
+      "I have gained comprehensive expertise in Agile methodologies, including Scrum, Kanban, and Lean practices. This certification has strengthened my ability to effectively manage projects using Atlassian tools like Jira, enabling me to handle sprint planning, task management, and project tracking with precision. It has also enhanced my leadership skills, allowing me to drive collaboration and iterative development in fast-paced, dynamic environments, ensuring the timely delivery of high-quality software products.",
+    icon: React.createElement(LuGraduationCap),
+    date: "Sep 2024",
+    url: "https://www.linkedin.com/learning/certificates/179cf9655117335c8f9d6ad043772b06be9b98b2aa45db89b3faf406a9db0c64",
+  },
 ] as const;
 
 export const projectsData = [
   {
+    title: "Suoq.net",
+    description:
+      "an online Arabic marketplace for buying and selling goods, properties, jobs, and services, offering advanced search and real-time messaging features.",
+    tags: [
+      "TypeScript",
+      "React",
+      "Next.js (app router)",
+      "Tailwindcss",
+      "Shadcn-ui",
+      "Prisma",
+      "socket.io",
+      "react-query",
+      "zod",
+      "zustand",
+      "nginx",
+      "digitalocean",
+      "pm2",
+      "namecheap",
+      "vercel",
+    ],
+    imageUrl: SuoqPortrait,
+    links: [
+      "https://mostaql.com/u/maheraladdin/reviews/7620749",
+      "https://suoq.net",
+    ],
+  },
+  {
+    title: "help them to reach",
+    description:
+      "An interactive website for student competitions, designed to engage primary school students through educational challenges and activities.",
+    tags: [
+      "TypeScript",
+      "React",
+      "Next.js (app router)",
+      "Mongodb",
+      "mongodb atlas",
+      "zod",
+      "prisma",
+      "zustand",
+      "react-query",
+      "tailwindcss",
+      "shadcn-ui",
+      "vercel",
+    ],
+    imageUrl: HelpThemToReachPortrait,
+    links: [
+      "https://mostaql.com/u/maheraladdin/reviews/7564778",
+      "https://qa-game-beige.vercel.app/",
+    ],
+  },
+  {
     title: "Arees",
     description:
-      "This is an awesome full-stack tourism mobile application using Expo",
+      "A mobile application built with Expo SDK 50 that allows users to explore, book, and manage travel programs from various agencies, featuring user authentication, favorites, and Stripe payment integration.",
     tags: [
       "TypeScript",
       "React",
@@ -190,16 +280,12 @@ export const projectsData = [
       "zustand",
     ],
     imageUrl: null,
-    githubUrl: "https://github.com/maheraladdin/arees",
-    demoUrl: "",
-    githubFrontEndUrl: "",
-    githubBackEndUrl: "",
-    youtubeUrl: "",
+    links: ["https://github.com/maheraladdin/arees"],
   },
   {
     title: "Miro Clone",
     description:
-      "This is an awesome full-stack Miro clone. It has features like authentication, boards, drawing, and more.",
+      "A collaborative whiteboard platform enabling teams to brainstorm, plan, and work together in real-time with visual tools like sticky notes, diagrams, and mind maps.",
     tags: [
       "TypeScript",
       "React",
@@ -212,16 +298,15 @@ export const projectsData = [
       "zustand",
     ],
     imageUrl: MiroClonePortrait,
-    githubUrl: "https://github.com/maheraladdin/miro-clone",
-    demoUrl: "https://miro-clone-eight.vercel.app/",
-    githubFrontEndUrl: "",
-    githubBackEndUrl: "",
-    youtubeUrl: "",
+    links: [
+      "https://github.com/maheraladdin/miro-clone",
+      "https://miro-clone-eight.vercel.app/",
+    ],
   },
   {
     title: "Discord Clone",
     description:
-      "This is an awesome full-stack Discord clone. It has features like authentication, channels, Real-time messaging, and more.",
+      "A real-time communication platform inspired by Discord, offering voice, video, and text channels for seamless group collaboration and community interaction.",
     tags: [
       "TypeScript",
       "React",
@@ -240,16 +325,15 @@ export const projectsData = [
       "zod",
     ],
     imageUrl: discordClonePortrait,
-    githubUrl: "https://github.com/maheraladdin/discord-clone",
-    demoUrl: "https://discord-clone-production-074b.up.railway.app/",
-    githubFrontEndUrl: "",
-    githubBackEndUrl: "",
-    youtubeUrl: "",
+    links: [
+      "https://github.com/maheraladdin/discord-clone",
+      "https://discord-clone-production-074b.up.railway.app/",
+    ],
   },
   {
-    title: "Trello Clone",
+    title: "Taskify",
     description:
-      "This is an awesome full-stack Trello clone. It has features like authentication, boards, lists, cards, and more.",
+      "A project management tool like Trello that allows users to create and organize tasks through boards, lists, and cards with real-time collaboration features.",
     tags: [
       "TypeScript",
       "React",
@@ -266,11 +350,10 @@ export const projectsData = [
       "zod",
     ],
     imageUrl: trelloClonePortrait,
-    githubUrl: "https://github.com/maheraladdin/trello-clone",
-    demoUrl: "https://trello-clone-maheraladdin.vercel.app/",
-    githubFrontEndUrl: "",
-    githubBackEndUrl: "",
-    youtubeUrl: "",
+    links: [
+      "https://github.com/maheraladdin/trello-clone",
+      "https://trello-clone-maheraladdin.vercel.app/",
+    ],
   },
   // {
   //   title: "Youtube Clone",
@@ -300,7 +383,7 @@ export const projectsData = [
   {
     title: "Netflix Clone",
     description:
-      "this an awesome full-stack Netflix clone. It has features like authentication, watching movies, adding movies to your list, and more.",
+      "A streaming platform inspired by Netflix, allowing users to browse, stream, and manage a personalized library of movies and TV shows.",
     tags: [
       "TypeScript",
       "React",
@@ -314,16 +397,15 @@ export const projectsData = [
       "yup",
     ],
     imageUrl: netflixClonePortrait,
-    githubUrl: "https://github.com/maheraladdin/netflix-clone",
-    demoUrl: "https://netflix-clone-delta-roan.vercel.app",
-    githubFrontEndUrl: "",
-    githubBackEndUrl: "",
-    youtubeUrl: "",
+    links: [
+      "https://github.com/maheraladdin/netflix-clone",
+      "https://netflix-clone-delta-roan.vercel.app",
+    ],
   },
   {
     title: "E-Commerce website",
     description:
-      "this an awesome Mern stack E-Commerce website. It has features like authentication, shopping cart, checkout, and more.",
+      "A single-vendor e-commerce web application offering seamless product browsing, secure checkout, and easy order management without inventory management features.",
     tags: [
       "react",
       "react router dom",
@@ -342,17 +424,16 @@ export const projectsData = [
       "stripe.js",
     ],
     imageUrl: eCommerceClonePortrait,
-    githubUrl: "",
-    githubFrontEndUrl:
+    links: [
       "https://github.com/maheraladdin/reactjs-ecommerce-web-app",
-    githubBackEndUrl: "https://github.com/maheraladdin/nodejs-ecommerce-api-v1",
-    demoUrl: "https://reactjs-ecommerce-web-app.vercel.app/",
-    youtubeUrl: "",
+      "https://github.com/maheraladdin/nodejs-ecommerce-api-v1",
+      "https://reactjs-ecommerce-web-app.vercel.app/",
+    ],
   },
   {
     title: `CD2js`,
     description:
-      "this is a co-work project with my colleague ,it's an expo mobile & web app to generate javascript code from class diagram",
+      "A mobile application that converts class diagrams into JavaScript code, automating the process of translating visual designs into functional code.",
     tags: [
       "react",
       "react native",
@@ -371,16 +452,12 @@ export const projectsData = [
       "react-native-web",
     ],
     imageUrl: null,
-    githubUrl: "https://github.com/maheraladdin/CD2jsApp.git",
-    githubFrontEndUrl: "",
-    githubBackEndUrl: "",
-    demoUrl: "",
-    youtubeUrl: "",
+    links: ["https://github.com/maheraladdin/CD2jsApp.git"],
   },
   {
     title: `ARFurniture`,
     description:
-      "this is a co-work project with my colleague ,it's an expo mobile app to sell furniture",
+      "A mobile application for browsing and purchasing furniture, offering a seamless shopping experience with detailed product listings, secure payments, and delivery options.",
     tags: [
       "react",
       "react native",
@@ -401,11 +478,10 @@ export const projectsData = [
       "firebase",
     ],
     imageUrl: null,
-    githubUrl: "",
-    githubFrontEndUrl: "https://github.com/maheraladdin/ARFurniture_firebase",
-    githubBackEndUrl: "https://github.com/maheraladdin/ARFurniture-MERN",
-    demoUrl: "",
-    youtubeUrl: "",
+    links: [
+      "https://github.com/maheraladdin/ARFurniture_firebase",
+      "https://github.com/maheraladdin/ARFurniture-MERN",
+    ],
   },
 ] as const;
 
@@ -433,6 +509,10 @@ export const skillsData = [
   "Planetscale",
   "Mongodb atlas",
   "Vercel",
+  "digitalocean",
+  "PM2",
+  "namecheap",
+  "nginx",
   "Next.js",
   "React router dom",
   "React",
@@ -440,6 +520,9 @@ export const skillsData = [
   "Shadcn ui",
   "React query",
   "Swr",
+  "Agile",
+  "Scrum",
+  "Jira",
 ] as const;
 
 export const subjectTemplate = "Job Offer - Software Engineer";
@@ -461,11 +544,12 @@ Google AI
 
 Mountain View, CA`;
 
-export const githubUrl = "https://github.com/maheraladdin";
-
-export const linkedinUrl =
-  "https://www.linkedin.com/in/maher-mansour-726a35200";
-
-export const twitterUrl = "https://twitter.com/maheralaa2222";
-
-export const codepenUrl = "https://codepen.io/maheraladdin";
+export const profiles = [
+  "https://github.com/maheraladdin",
+  "https://www.linkedin.com/in/maher-aladdin-mansour",
+  "https://twitter.com/maheralaa2222",
+  "https://codepen.io/maheraladdin",
+  "https://mostaql.com/u/maheraladdin",
+  "https://wa.me/01116491564",
+  "https://t.me/maheraladdin",
+];

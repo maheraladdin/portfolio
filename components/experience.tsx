@@ -50,15 +50,17 @@ export default function Experience() {
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {item.description}
               </p>
-              <a
-                target={"_blank"}
-                className={
-                  "mt-1.5 block w-full xl:text-end hover:underline transition-all text-sky-500"
-                }
-                href={item.url}
-              >
-                verification
-              </a>
+              {item?.url ? (
+                <a
+                  target={"_blank"}
+                  className={
+                    "mt-1.5 block w-full xl:text-end hover:underline transition-all text-sky-500"
+                  }
+                  href={item.url}
+                >
+                  verification
+                </a>
+              ) : null}
             </VerticalTimelineElement>
           </React.Fragment>
         ))}

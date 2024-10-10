@@ -4,13 +4,7 @@ import React, { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import {
-  FaGithubSquare,
-  FaLink,
-  FaYoutube,
-  FaReact,
-  FaNodeJs,
-} from "react-icons/fa";
+import { FaGithubSquare, FaLink, FaYoutube, FaStar } from "react-icons/fa";
 import clsx from "clsx";
 
 type ProjectProps = (typeof projectsData)[number];
@@ -20,11 +14,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
-  githubUrl,
-  demoUrl,
-  youtubeUrl,
-  githubFrontEndUrl,
-  githubBackEndUrl,
+  links,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -72,53 +62,28 @@ export default function Project({
             ))}
           </ul>
           <section className={"flex gap-4 mt-4"}>
-            {youtubeUrl ? (
-              <a
-                className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-                href={youtubeUrl}
-                target="_blank"
-              >
-                <FaYoutube />
-              </a>
-            ) : null}
-            {githubUrl ? (
-              <a
-                className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-                href={githubUrl}
-                target="_blank"
-              >
-                <FaGithubSquare />
-              </a>
-            ) : null}
-            {githubFrontEndUrl ? (
-              <a
-                className="bg-white p-4 text-gray-700 relative flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-                href={githubFrontEndUrl}
-                target="_blank"
-              >
-                <FaReact className={"hover:text-blue-400"} />
-                <FaGithubSquare className={"absolute top-2 left-2"} />
-              </a>
-            ) : null}
-            {githubBackEndUrl ? (
-              <a
-                className="bg-white p-4 text-gray-700 relative flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-                href={githubBackEndUrl}
-                target="_blank"
-              >
-                <FaNodeJs className={"hover:text-green-400"} />
-                <FaGithubSquare className={"absolute top-2 left-2"} />
-              </a>
-            ) : null}
-            {demoUrl ? (
-              <a
-                className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-                href={demoUrl}
-                target="_blank"
-              >
-                <FaLink />
-              </a>
-            ) : null}
+            {links
+              ? links.map((link, index) => (
+                  <a
+                    key={index}
+                    className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+                    href={link}
+                    target="_blank"
+                  >
+                    {(() => {
+                      if (link.includes("youtube")) {
+                        return <FaYoutube />;
+                      } else if (link.includes("github")) {
+                        return <FaGithubSquare />;
+                      } else if (link.includes("mostaql")) {
+                        return <FaStar />;
+                      } else {
+                        return <FaLink />;
+                      }
+                    })()}
+                  </a>
+                ))
+              : null}
           </section>
         </div>
 
