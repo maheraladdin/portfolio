@@ -54,7 +54,7 @@ export const experiencesData = [
       "I took a full-stack development track on Udacity. I learned about the front-end, and python",
     icon: React.createElement(LuGraduationCap),
     date: "Oct 2020",
-    url: "https://graduation.udacity.com/confirm/JAAEPAPH",
+    url: "https://www.udacity.com/certificate/e/ddd3829e-cbe3-11ea-8992-c768c95f0385",
   },
   {
     title: "Web Development Challenger",
@@ -63,7 +63,7 @@ export const experiencesData = [
       "I took a web development challenger track on Udacity. I learned about the front-end, wordpress",
     icon: React.createElement(LuGraduationCap),
     date: "Dec 2020",
-    url: "https://graduation.udacity.com/confirm/GK3DK7AD",
+    url: "www.udacity.com/certificate/e/9accde1c-0821-11eb-9215-2b28c6143fe8",
   },
   {
     title: "Project Management",
@@ -72,7 +72,7 @@ export const experiencesData = [
       "I took a project management course on Coursera. I learned about the basics of project management.",
     icon: React.createElement(LuGraduationCap),
     date: "Feb 2021",
-    url: "http://coursera.org/verify/F4GQ872SFQ3Z",
+    url: "https://coursera.org/share/267ad167919e526bf0684a1f30331d5a",
   },
   {
     title: "Web Development Professional nano-degree",
@@ -81,7 +81,7 @@ export const experiencesData = [
       "I took a web development professional nano-degree on Udacity. I learned about the front-end, back-end",
     icon: React.createElement(LuGraduationCap),
     date: "Mar 2021",
-    url: "https://confirm.udacity.com/JQ3YCSGJ",
+    url: "www.udacity.com/certificate/e/1823d426-6572-11eb-9b1d-fb3773c799f2",
   },
   {
     title: "Responsive Web Design",
