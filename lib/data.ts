@@ -63,7 +63,7 @@ export const experiencesData = [
       "I took a web development challenger track on Udacity. I learned about the front-end, wordpress",
     icon: React.createElement(LuGraduationCap),
     date: "Dec 2020",
-    url: "www.udacity.com/certificate/e/9accde1c-0821-11eb-9215-2b28c6143fe8",
+    url: "https://www.udacity.com/certificate/e/9accde1c-0821-11eb-9215-2b28c6143fe8",
   },
   {
     title: "Project Management",
@@ -81,7 +81,7 @@ export const experiencesData = [
       "I took a web development professional nano-degree on Udacity. I learned about the front-end, back-end",
     icon: React.createElement(LuGraduationCap),
     date: "Mar 2021",
-    url: "www.udacity.com/certificate/e/1823d426-6572-11eb-9b1d-fb3773c799f2",
+    url: "https://www.udacity.com/certificate/e/1823d426-6572-11eb-9b1d-fb3773c799f2",
   },
   {
     title: "Responsive Web Design",
