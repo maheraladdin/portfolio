@@ -550,6 +550,6 @@ export const profiles = [
   "https://twitter.com/maheralaa2222",
   "https://codepen.io/maheraladdin",
   "https://mostaql.com/u/maheraladdin",
-  "https://wa.me/01116491564",
+  "https://wa.me/+2001116491564",
   "https://t.me/maheraladdin",
 ];
