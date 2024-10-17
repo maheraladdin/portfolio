@@ -19,16 +19,17 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        From my early passion for programming with Visual Basic in middle
-        school, I've grown into a full-stack JavaScript and TypeScript developer
-        with expertise in Next.js, the MERN stack, and Expo. Along the way, I’ve
-        earned certifications from FreeCodeCamp, Udemy, and Udacity, as well as
-        an Atlassian Project Management certificate. My portfolio includes
-        notable projects like Taskify, a project management tool, and Suoq.net,
-        an Arabic online classifieds platform. I approach every challenge with a
-        systematic mindset and value honesty above all. Looking ahead, I aim to
-        establish my own tech company and contribute to industry innovation,
-        embracing the motto "anything is better than nothing."
+        My tech journey began in middle school with Visual Basic, sparking my
+        passion for programming. Later, I earned a bachelor’s degree in Computer
+        Science from Mansoura University, providing a solid foundation for my
+        career. Over the years, I’ve grown into a full-stack JavaScript and
+        TypeScript developer, specializing in Next.js, the MERN stack, and Expo.
+        Along the way, I earned certifications from FreeCodeCamp, Udemy, and
+        Udacity, as well as an Atlassian Project Management certificate. I
+        approach every challenge with a systematic mindset and value honesty
+        above all. Looking ahead, I aim to establish my own tech company and
+        contribute to industry innovation, embracing the motto: "Anything is
+        better than nothing."
       </p>
     </motion.section>
   );

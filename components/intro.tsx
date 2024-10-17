@@ -64,12 +64,15 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Maher.</span> Software Engineer
-        with over <strong>4 years</strong> in the industry. I enjoy building{" "}
-        <span className="italic">sites & apps</span>. My focus is{" "}
+        <span className="font-bold">Hello, I'm Maher</span>, a Software Engineer
+        with over <strong>4 years of experience</strong>. I specialize in{" "}
         <span className="underline">MERN</span>,{" "}
         <span className="underline">Next.js</span>, and{" "}
-        <span className="underline">Expo</span>.
+        <span className="underline">Expo</span>, building{" "}
+        <span className="italic">
+          modern web and mobile applications. sites & apps
+        </span>
+        .
       </motion.h1>
 
       <motion.div
