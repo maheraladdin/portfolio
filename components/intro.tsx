@@ -69,10 +69,7 @@ export default function Intro() {
         <span className="underline">MERN</span>,{" "}
         <span className="underline">Next.js</span>, and{" "}
         <span className="underline">Expo</span>, building{" "}
-        <span className="italic">
-          modern web and mobile applications. sites & apps
-        </span>
-        .
+        <span className="italic">modern web and mobile applications.</span>.
       </motion.h1>
 
       <motion.div
