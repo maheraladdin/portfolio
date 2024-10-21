@@ -38,7 +38,7 @@ export default function Experience() {
               }}
               dateClassName={"mx-2"}
               date={item.date}
-              icon={item.icon}
+              icon={item.icon as any}
               iconStyle={{
                 background:
                   theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
