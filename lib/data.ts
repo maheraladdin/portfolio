@@ -327,7 +327,7 @@ export const projectsData = [
     imageUrl: discordClonePortrait,
     links: [
       "https://github.com/maheraladdin/discord-clone",
-      "https://discord-clone-production-074b.up.railway.app/",
+      "https://discord-clone.duckdns.org",
     ],
   },
   {
