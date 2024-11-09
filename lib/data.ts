@@ -325,10 +325,7 @@ export const projectsData = [
       "zod",
     ],
     imageUrl: discordClonePortrait,
-    links: [
-      "https://github.com/maheraladdin/discord-clone",
-      "https://discord-clone.duckdns.org",
-    ],
+    links: ["https://github.com/maheraladdin/discord-clone"],
   },
   {
     title: "Taskify",
