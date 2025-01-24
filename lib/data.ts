@@ -2,7 +2,6 @@ import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
 import discordClonePortrait from "@/public/discord-clone.webp";
 import trelloClonePortrait from "@/public/trello-clone.webp";
-// import youtubeClonePortrait from "@/public/youtube-clone.webp";
 import netflixClonePortrait from "@/public/netflix-clone.webp";
 import eCommerceClonePortrait from "@/public/e-commerce-web-site.webp";
 import MiroClonePortrait from "@/public/miro-clone.webp";
@@ -235,7 +234,9 @@ export const projectsData = [
     ],
     imageUrl: SuoqPortrait,
     links: [
+      "https://youtu.be/m61xxoYPWhc",
       "https://mostaql.com/u/maheraladdin/reviews/7620749",
+      "https://apps.apple.com/us/app/%D8%B3%D9%88%D9%82-%D9%86%D8%AA-%D8%A8%D9%8A%D8%B9-%D8%A7%D8%B4%D8%AA%D8%B1-%D9%88%D9%81%D8%B1/id6689517823",
       "https://suoq.net",
     ],
   },
@@ -280,7 +281,11 @@ export const projectsData = [
       "zustand",
     ],
     imageUrl: null,
-    links: ["https://github.com/maheraladdin/arees"],
+    links: [
+      "https://youtube.com/shorts/Whq_BA4fFzU?feature=share",
+      "https://youtube.com/shorts/bT-iy5exIFE?feature=share",
+      "https://github.com/maheraladdin/arees",
+    ],
   },
   {
     title: "Miro Clone",
@@ -299,6 +304,7 @@ export const projectsData = [
     ],
     imageUrl: MiroClonePortrait,
     links: [
+      "https://youtu.be/pqspmTIezus",
       "https://github.com/maheraladdin/miro-clone",
       "https://miro-clone-eight.vercel.app/",
     ],
@@ -325,7 +331,10 @@ export const projectsData = [
       "zod",
     ],
     imageUrl: discordClonePortrait,
-    links: ["https://github.com/maheraladdin/discord-clone"],
+    links: [
+      "https://youtu.be/s1Xq5yGxYvE",
+      "https://github.com/maheraladdin/discord-clone",
+    ],
   },
   {
     title: "Taskify",
@@ -348,35 +357,11 @@ export const projectsData = [
     ],
     imageUrl: trelloClonePortrait,
     links: [
+      "https://youtu.be/a_0Pp7d5nhk",
       "https://github.com/maheraladdin/trello-clone",
       "https://trello-clone-maheraladdin.vercel.app/",
     ],
   },
-  // {
-  //   title: "Youtube Clone",
-  //   description:
-  //     "this an awesome full-stack Youtube clone. It has features like authentication, channels, videos, comments, and more.",
-  //   tags: [
-  //     "TypeScript",
-  //     "React",
-  //     "Next.js (pages router)",
-  //     "trpc",
-  //     "prisma",
-  //     "Planetscale",
-  //     "Tailwindcss",
-  //     "headless-ui",
-  //     "next-auth",
-  //     "react-query",
-  //     "cloudinary",
-  //     "zod",
-  //   ],
-  //   imageUrl: youtubeClonePortrait,
-  //   githubUrl: "https://github.com/maheraladdin/video-chill",
-  //   demoUrl: "https://video-chill.vercel.app/",
-  //   githubFrontEndUrl: "",
-  //   githubBackEndUrl: "",
-  //   youtubeUrl: "",
-  // },
   {
     title: "Netflix Clone",
     description:

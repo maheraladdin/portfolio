@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { FaGithubSquare, FaLink, FaYoutube, FaStar } from "react-icons/fa";
+import { FaGithubSquare, FaLink, FaYoutube, FaStar, FaGooglePlay, FaAppStoreIos } from "react-icons/fa";
 import clsx from "clsx";
 
 type ProjectProps = (typeof projectsData)[number];
@@ -71,12 +71,16 @@ export default function Project({
                     target="_blank"
                   >
                     {(() => {
-                      if (link.includes("youtube")) {
+                      if (link.includes("youtu")) {
                         return <FaYoutube />;
                       } else if (link.includes("github")) {
                         return <FaGithubSquare />;
                       } else if (link.includes("mostaql")) {
                         return <FaStar />;
+                      } else if(link.includes("play.google")) {
+                        return <FaGooglePlay />
+                      } else if (link.includes("apps.apple")) {
+                        return <FaAppStoreIos />
                       } else {
                         return <FaLink />;
                       }
